@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N64</title>
+    <link rel="stylesheet" href="https://retro.5ht.co/style.css" />
+    <style>header { background: linear-gradient(135deg, #050505, #1063F7); }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="assets/Nintendo.svg?v=1" height=50>
+                </div>
+                <div class="nav-links">
+                    <a href="#rev">Ревізії</a>
+                    <a href="#spec">Специфікація</a>
+                    <a href="#doc">Документація</a>
+                    <a href="#code">Код</a>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Nintendo 64</h1>
+                    <h2>Revision: NUS-CPU-01</h2>
+                    <p>188 x 161.5 mm</p>
+                    <button onclick="location.href='https://github.com/BitEdits/snes'" type="button">Github</button>
+                </div>
+                <div class="hero-image">
+                    <img width=300 src="assets/NUS-CPU-04Top.jpg" style="padding: 10px 10px 10px 10px;background-color:#EEEEEE;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section id="intro" class="container">
+            <h2><a name="intro">Сімейний комп'ютер від Nintendo</a></h2>
+    </section>
+    <section id="rev" class="container">
+            <h2><a name="spec">Ревізії PCB</a></h2>
+            <table class="specs">
+                <tr>
+                    <th width=20%>NUS-CPU-[01:04]</th>
+                    <td>1996-1997. Ці материнські плати зустрічаються лише в ранніх випусках
+                        північноамериканських і японських консолей. Їх єдиний відмінний фактор
+                        відносно важливий, оскільки користувач може легко модифікувати ці консолі
+                        для підтримки виходу RGB. Після ревізії NUS-CPU-04 зміни відео ЦАП
+                        вимагають від користувача значно складнішої модифікації RGB.
+                        Ідентифікувати їх досить просто, оскільки практично всі вони мають
+                        серійний номер, який починається з NS1. Серійні номери, які починаються
+                        з NS2 або вище, належать до пізніших версій материнської плати. Ревізії
+                        NUS-CPU-04 не мають композитної синхронізації (CSYNC),
+                        присутньої на контакті 3 мультивиходу, оскільки компоненти
+                        для нього залишилися незаповненими на заводі.
+                    </td>
+                </tr>
+                <tr>
+                    <th>NUS-CPU-[05:07]</th>
+                    <td>1997-1998. Як описано вище, зміни чіпів у цих консолях призводять до того,
+                       що користувач відчуває значні труднощі під час спроби зробити RGB модифікацію на них.
+                       Хоча це ще можливо, це стає набагато складніше. Крім того, пластик
+                       навколо порту EXT на нижній частині був трохи меншим. Така зміна
+                       призводить до того, що такі пристрої, як Doctor V64, більше не
+                       підходять до розетки. Їх легко ідентифікувати за серійними номерами,
+                       що починаються на NS2.</td>
+                </tr>
+                <tr>
+                    <th>NUS-CPU-[08:09]</th>
+                    <td>1999-2001. Зустрічаючись у барвистій серії «Funtastic», але не обмежуючись цим,
+                       ці версії мають більш налаштований відеовихід. Хоча це може сподобатися
+                       не всім, користувач, якого не цікавить модифікацію RGB тракту
+                       і віддає перевагу чіткішому, але піксельному вигляду, ймовірно,
+                       зацікавиться ними. Імовірно, у нього є як менший пластик EXT,
+                       так і модифікація RGB, які зустрічаються в системах 05-07.</td>
+                </tr>
+                <tr>
+                    <th>NUS-CPU-P-[01:02]</th>
+                    <td>Зустрічається в усіх чорних консолях PAL і ранніх кольорових
+                        системах серії PAL «Funtastic». Ці модифікації плати надають
+                        S-video для мультивиходу, але для правильного відображення
+                        S-video потрібен спеціальний кабель із певними частинами.</td>
+                </tr>
+                <tr>
+                    <th>NUS-CPU-P-03</th>
+                    <td>Зустрічається в кольоровій серії PAL «Funtastic» (переважно в
+                        синьо-білому варіанті), а також у консолях Pikachu. Ця плата не
+                        робить S-video доступним на мультивиході, але його можна відновити.</td>
+                </tr>
+                <tr>
+                    <th>NUS-CPU-R-01</th>
+                    <td>Знайдено в чорних консолях PAL, які продаються у Франції.
+                        Їх можна легко впізнати за ярликом у нижній частині консолі,
+                        де написано «FRA» замість «EUR». Цю материнську плату можна
+                        легко модифікувати RGB, завершивши наявні на материнській
+                        платі сліди або додавши просту схему підсилювача RGB,
+                        подібну до ранніх консолей NTSC. S-video також можна
+                        відновити так само, як у New-Style SNES або Super Famicom Jr.</td>
+                </tr>
+            </table>
+    </section>
+    <section id="spec" class="container">
+            <h2><a name="spec">Специфікація</a></h2>
+            <table class="specs">
+                <tr>
+                    <th>Процесор:</th>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>Пам'ять:</th>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>Осцилятор:</th>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>Графіка:</th>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>Звук:</th>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>Картріджі:</th>
+                    <td>.</td>
+                </tr>
+            </table>
+        </section>
+    <section id="doc" class="container">
+            <h2><a name="doc">Документація</a></h2>
+            <p>[1]. <a href="https://classic.copetti.org/writings/consoles/nintendo-64/">R. Copetti. Nintendo 64 Architecture — A Practical Analysis. https://copetti.org, 2019.</a><br>
+               [2]. <a href="NUS-CPU-03-04-schematics.pdf">Принципова схема N64</a><br>
+            </p>
+    </section>
+    <section id="code" class="container">
+            <h2><a name="code">Код</a></h2>
+    </section>
+</main>
+<footer>
+    <p> 2024&mdash;2025 &copy; <a href="https://game.5ht.co">Bit Edits: Ретронсолі</a>. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
